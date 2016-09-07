@@ -1,5 +1,3 @@
-# website
-I am a python developer by profession who had a same thought of building his own website. Finally I made it :P with little efforts.
 
 -Mean stack - Mongo, express, angular and node js.
 
