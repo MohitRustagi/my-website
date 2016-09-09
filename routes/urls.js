@@ -1,8 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var path = require('path');
-var settings = require('../config');
-console.log	(settings);
+// var settings = require('../config');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {

@@ -1,5 +1,5 @@
 $(function() {
-    var data = "homepage"
+    // var data = "homepage"
     // $.post("/main/", {'data': data}, function(data) { console.log("") });
     $("#contactForm input,#contactForm textarea").jqBootstrapValidation({
         preventSubmit: true,
