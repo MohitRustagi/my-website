@@ -1,5 +1,6 @@
 $(function() {
-    $.post("/Amain/", function(data) { alert(data); });
+    var data = "homepage"
+    // $.post("/main/", {'data': data}, function(data) { console.log("") });
     $("#contactForm input,#contactForm textarea").jqBootstrapValidation({
         preventSubmit: true,
         submitError: function($form, event, errors) {

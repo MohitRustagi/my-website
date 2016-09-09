@@ -1,6 +1,8 @@
 var express = require('express');
 var router = express.Router();
 var path = require('path');
+var settings = require('../config');
+console.log	(settings);
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -13,12 +15,16 @@ router.get('/download-resume/', function(req, res) {
 });	 
 
 
-/* analytics */
-router.post('/Amain/', function(req, res) {
-  console.log(process.env.NODE_ENV);
-  console.log(res.req);
-  res.send({'message': 'hey'});
-});
+// /* analytics */
+// router.post('/main/', function(req, res) {
+//   var ip = req.headers['x-forwarded-for'] || 
+//            req.connection.remoteAddress || 
+//            req.socket.remoteAddress ||
+//            req.connection.socket.remoteAddress;
+  
+//   res.send({'success': 'true'});
+//   console.log(req);
+// });
 
 
 module.exports = router;
