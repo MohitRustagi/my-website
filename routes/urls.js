@@ -12,8 +12,11 @@ router.get('/download-resume/', function(req, res) {
   res.download('public/MohitRustagi_Resume.pdf');
 });	 
 
-router.get('/analytics/main/', function(req, rest) {
+
+/* analytics */
+router.post('/Amain/', function(req, res) {
   console.log(process.env.NODE_ENV);
+  console.log(res.req);
   res.send({'message': 'hey'});
 });
 

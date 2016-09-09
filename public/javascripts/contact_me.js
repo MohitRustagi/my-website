@@ -1,5 +1,5 @@
 $(function() {
-    $.get("analytics/main/", function(data) { alert(data); });
+    $.post("/Amain/", function(data) { alert(data); });
     $("#contactForm input,#contactForm textarea").jqBootstrapValidation({
         preventSubmit: true,
         submitError: function($form, event, errors) {
