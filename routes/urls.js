@@ -12,4 +12,10 @@ router.get('/download-resume/', function(req, res) {
   res.download('public/MohitRustagi_Resume.pdf');
 });	 
 
+router.get('/analytics/main/', function(req, rest) {
+  console.log(process.env.NODE_ENV);
+  res.send({'message': 'hey'});
+});
+
+
 module.exports = router;
