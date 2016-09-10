@@ -1,5 +1,4 @@
 $(function() {
-    // var data = "homepage"
     // $.post("/main/", {'data': data}, function(data) { console.log("") });
     $("#contactForm input,#contactForm textarea").jqBootstrapValidation({
         preventSubmit: true,
@@ -22,7 +21,7 @@ $(function() {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-                url: "././mail/contact_me.php",
+                url: "/form/",
                 type: "POST",
                 data: {
                     name: name,

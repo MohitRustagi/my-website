@@ -14,6 +14,22 @@ router.get('/download-resume/', function(req, res) {
 });	 
 
 
+/*contact us form */
+router.post('/form/', function(req, res) {
+  var name = req.body.name,
+      phone = req.body.phone,
+      email = req.body.email
+      message = req.body.mesage;
+  
+  if(name and phone and email and message) {
+  	
+  }
+      
+console.log(res);
+debugger;
+});
+
+
 // /* analytics */
 // router.post('/main/', function(req, res) {
 //   var ip = req.headers['x-forwarded-for'] || 
